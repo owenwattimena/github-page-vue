@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1267 694">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #970000;
+      }
+
+      .cls-4 {
+        fill: #1c1919;
+      }
+
+      .cls-5 {
+        fill: #8d0000;
+      }
+
+      .cls-6, .cls-9 {
+        fill: #c40000;
+      }
+
+      .cls-7, .cls-8 {
+        fill: #3d2727;
+      }
+
+      .cls-7 {
+        font-size: 64px;
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+      }
+
+      .cls-8, .cls-9 {
+        font-size: 30px;
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-10 {
+        fill: #f5b020;
+      }
+
+      .cls-11 {
+        filter: url(#Path_9);
+      }
+
+      .cls-12 {
+        filter: url(#Rectangle_9);
+      }
+
+      .cls-13 {
+        filter: url(#Rectangle_8);
+      }
+    </style>
+    <filter id="Rectangle_8" x="0" y="0" width="1267" height="694" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_9" x="0" y="0" width="1267" height="694" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <g class="cls-13" transform="matrix(1, 0, 0, 1, 0, 0)">
+        <rect id="Rectangle_8-2" data-name="Rectangle 8" class="cls-1" width="1207" height="634" rx="10" transform="translate(357 2159)"/>
+      </g>
+    </clipPath>
+    <filter id="Path_9" x="191.135" y="-91.919" width="441.846" height="933.368" filterUnits="userSpaceOnUse">
+      <feOffset dx="-10" dy="30" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="49.5" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_9" data-name="Group 9" transform="translate(-327 -2129)">
+    <g id="Group_3" data-name="Group 3" transform="translate(0 -3)">
+      <g class="cls-12" transform="matrix(1, 0, 0, 1, 327, 2132)">
+        <rect id="Rectangle_9-2" data-name="Rectangle 9" class="cls-1" width="1207" height="634" rx="10" transform="translate(30 27)"/>
+      </g>
+      <g id="Mask_Group_2" data-name="Mask Group 2" class="cls-2">
+        <g id="Group_2" data-name="Group 2">
+          <path id="Path_8" data-name="Path 8" class="cls-3" d="M949.676,2789c-56.337,5.7-390.333,0-390.333,0l195.094-634.513,6.735,18.038Z" transform="translate(-78 4)"/>
+          <path id="Path_6" data-name="Path 6" class="cls-4" d="M763.022,2123.462c0,4.643-199.655,725.877-199.655,725.877l-331.21-15.477,15.477-722.782Z" transform="translate(-78 4)"/>
+          <g class="cls-11" transform="matrix(1, 0, 0, 1, 327, 2132)">
+            <path id="Path_9-2" data-name="Path 9" class="cls-5" d="M821.48,2793l-42.4,1.948h-55.44l-47.009-636.368Z" transform="translate(-327 -2132)"/>
+          </g>
+          <path id="Path_7" data-name="Path 7" class="cls-6" d="M747.739,2156.237c0,19.573,102.732,658.726,102.732,658.726h812.547V2667.658H951.072Z" transform="translate(-71.035 2.779)"/>
+        </g>
+      </g>
+    </g>
+    <text id="Owen_Wattimena" data-name="Owen Wattimena" class="cls-7" transform="translate(984 2243)"><tspan x="0" y="0">Owen Wattimena</tspan></text>
+    <text id="Jl._Ir._Putuhena_-_Waiyame" data-name="Jl. Ir. Putuhena - Waiyame" class="cls-8" transform="translate(1091 2347)"><tspan x="0" y="0">Jl. Ir. Putuhena - Waiyame</tspan></text>
+    <text id="_62_853_4414_0815" data-name="+62 853 4414 0815" class="cls-8" transform="translate(1177 2412)"><tspan x="0" y="0">+62 853 4414 0815</tspan></text>
+    <text id="wentoxwtt_gmail.com" data-name="wentoxwtt@gmail.com" class="cls-8" transform="translate(1128 2477)"><tspan x="0" y="0">wentoxwtt@gmail.com</tspan></text>
+    <text id="fb.com_owenwattimena" data-name="fb.com/owenwattimena" class="cls-8" transform="translate(1119 2542)"><tspan x="0" y="0">fb.com/owenwattimena</tspan></text>
+    <text id="Instagram.com_owenwattimena" data-name="Instagram.com/owenwattimena" class="cls-8" transform="translate(1014 2607)"><tspan x="0" y="0">Instagram.com/owenwattimena</tspan></text>
+    <text id="Wentox_Wtt" data-name="Wentox Wtt" class="cls-9" transform="translate(1346 2286)"><tspan x="0" y="0">Wentox Wtt</tspan></text>
+    <path id="Union_1" data-name="Union 1" class="cls-10" d="M-1976,43V28.882l-14-8.124,14-8.651V0h43V43Z" transform="translate(3437 2315)"/>
+    <path id="Union_2" data-name="Union 2" class="cls-10" d="M-1976,43V28.882l-14-8.124,14-8.651V0h43V43Z" transform="translate(3437 2380)"/>
+    <path id="Union_3" data-name="Union 3" class="cls-10" d="M-1976,43V28.882l-14-8.124,14-8.651V0h43V43Z" transform="translate(3437 2445)"/>
+    <path id="Union_4" data-name="Union 4" class="cls-10" d="M-1976,43V28.882l-14-8.124,14-8.651V0h43V43Z" transform="translate(3437 2510)"/>
+    <path id="Union_5" data-name="Union 5" class="cls-10" d="M-1976,43V28.882l-14-8.124,14-8.651V0h43V43Z" transform="translate(3437 2575)"/>
+  </g>
+</svg>
