@@ -8,17 +8,141 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="asset/bootstrap_4/css/bootstrap.css">
+    <link rel="stylesheet" href="asset/style.css">
 
     <title>owenwattimena.github.io</title>
 </head>
 
 <body>
+    <div class="home" id="home">
+        <header class="position-absolute">
+            <div class="container">
+                <nav>
+                    <div class="nav-brand">
+                        <a href="#" class="text-light">Owen Wattimena</a>
+
+                    </div>
+                    <div class="nav-menu">
+                        <ul>
+                            <li><a href="#" class="home-menu">Home</a></li>
+                            <li><a href="#" class="about-menu">About</a></li>
+                            <li><a href="#" class="contact-menu">Contact</a></li>
+                        </ul>
+                        <div class="menu-line"></div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="img1"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img2"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img3"></div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="img4"></div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="container">
+            <div class="quotes position-absolute text-light text-right">
+                <p>
+                    "Jika kau tidak bisa membuatnya dengan baik, setidaknya buatlah itu terlihat baik."
+                </p>
+                <span>~Bill Gates</span>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="container">
+
+            <h1>About</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Fromal Edication</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Sertificate</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-skill">
+                <h3>Skill</h3>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <h1>Contact</h1>
+        <div class="id-card">
+            <img src="asset/img/card.svg" alt="">
+        </div>
+
+        <footer>
+            <p>Copyright by Wentox Wtt</p>
+        </footer>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="asset/jquery/jquery-3.3.1.js"></script>
     <script src="asset/bootstrap_4/js/popper.min.js"></script>
     <script src="asset/bootstrap_4/js/bootstrap.js"></script>
+    <script>
+        $('.home-menu').hover(function () {
+            // over
+            $('.menu-line').toggleClass('home-menu-line');
+
+        }, function () {
+            // out
+            $('.menu-line').toggleClass('home-menu-line');
+        }
+        );
+        $('.about-menu').hover(function () {
+            // over
+            $('.menu-line').toggleClass('about-menu-line');
+
+        }, function () {
+            // out
+            $('.menu-line').toggleClass('about-menu-line');
+        }
+        );
+        $('.contact-menu').hover(function () {
+            // over
+            $('.menu-line').toggleClass('contact-menu-line');
+
+        }, function () {
+            // out
+            $('.menu-line').toggleClass('contact-menu-line');
+        }
+        );
+    </script>
 </body>
 
 </html>
