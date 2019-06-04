@@ -1,4 +1,7 @@
 
+html, body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .primary-text{
     color: #23A0B4;
@@ -103,7 +106,102 @@
 
 /* end of Home */
 
+/* about */
+.bottom-line{
+    width: 100px;
+    height: 5px;
+    background-color: #23A0B4;
+    margin-bottom: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100px;
+}
 
+.about .card{
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+}
+
+.about .card-body{
+    padding: 10px;
+}
+
+.card-info{
+    height: 160px;
+    background-color: #C3FEC5;
+    padding: 10px;
+}
+.card-info ul{
+    list-style: none;
+    margin-bottom: 0;
+    /* padding: 25px; */
+    box-sizing: border-box;
+}
+.card-info ul li{
+    display: flex;
+}
+.fa-star{
+    color: goldenrod;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.card-info li p{
+    margin-bottom: 5px;
+    /* font-size: 12pt; */
+}
+    /* about card icon */
+.graduation, .certificate{
+    content: "";
+    width: 140px;
+    height: 140px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.graduation{
+    background-image: url(img/wisuda.svg);
+}
+.certificate{
+    background-image: url(img/certificate.svg);
+}
+
+/* card-info responsive */
+@media only screen and (max-width: 407px){
+    .card-info{
+        height: auto;
+    }
+}
+
+.education-title, .certificate-title, .knowledge-title{
+    color: #23B44A;
+}
+.knowledge-list .row>div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.knowledge-list img{
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+    /* knowledge-list responsive */
+@media only screen and (max-width: 991px){
+    .knowledge-list .row{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 300px){
+    .knowledge-list .row{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+/* end of about */
 
 
 
