@@ -203,6 +203,15 @@ html, body{
 }
 /* end of about */
 
+/* contact */
+.contact, .row div{
+    padding-right: 0;
+}
+
+footer p{
+    margin: 0;
+}
+/* end of contact */
 
 
 

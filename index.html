@@ -13,10 +13,11 @@
     <!-- owenwattimena style -->
     <link rel="stylesheet" href="asset/style.css">
 
-    <title>owenwattimena.github.io</title>
+    <title>Owen Wattimena</title>
 </head>
 
 <body>
+    <!-- home page -->
     <div class="home" id="home">
         <header class="position-absolute">
             <div class="container">
@@ -43,7 +44,7 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             </ol>
-            <div class="carousel-inner d-none">
+            <div class="carousel-inner d-non">
                 <div class="carousel-item active">
                     <div class="img2"></div>
                 </div>
@@ -77,12 +78,13 @@
             </div>
         </div>
     </div>
+    <!-- about page -->
     <div class="about" id="about">
-        <div class="container mt-4">
+        <div class="container mt-4 pb-5">
             <!-- title -->
             <h1 class="text-center primary-text title">About</h1>
             <!-- title bottom line -->
-            <div class="bottom-line"></div>
+            <div class="bottom-line blue"></div>
 
             <div class="row mt-5">
 
@@ -194,15 +196,23 @@
             </div>
         </div>
     </div>
-    <div class="contact" id="contact">
-        <h1>Contact</h1>
-        <div class="id-card">
-            <img src="asset/img/card.svg" alt="">
-        </div>
+    <!-- contact page -->
+    <div class="contact" id="contact" style="background-color: #FC6D4B; transition: 2s;">
+        <div class="container pt-4">
+            <h1 class="text-light text-center">Contact</h1>
+            <div class="bottom-line bg-light"></div>
+            <div class="id-card">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <img src="asset/img/card.svg" alt="">
+                    </div>
+                </div>
+            </div>
 
-        <footer>
-            <p>Copyright by Wentox Wtt</p>
-        </footer>
+            <footer class="text-light text-center pb-3">
+                <p>Copyright by Wentox Wtt</p>
+            </footer>
+        </div>
     </div>
 
     <!-- Optional JavaScript -->
@@ -238,6 +248,35 @@
             $('.menu-line').toggleClass('contact-menu-line');
         }
         );
+        $('#carouselExampleIndicators').on('slid.bs.carousel', function () {
+            // do something…
+
+            let currentImage = $('.active div').attr('class');
+
+
+            switch (currentImage) {
+                case 'img1':
+                    $('#contact').css('background-color', '#C8291F');
+                    $('#contact').css('transition', '2s');
+                    break;
+                case 'img2':
+                    $('#contact').css('background-color', '#FC6D4B');
+                    $('#contact').css('transition', '2s');
+                    break;
+                case 'img3':
+                    $('#contact').css('background-color', '#8F1E37');
+                    $('#contact').css('transition', '2s');
+                    break;
+                case 'img4':
+                    $('#contact').css('background-color', '#434343');
+                    $('#contact').css('transition', '2s');
+                    break;
+
+                default:
+                    break;
+            }
+
+        })
     </script>
 </body>
 
