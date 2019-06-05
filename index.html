@@ -28,9 +28,9 @@
                     </div>
                     <div class="nav-menu">
                         <ul>
-                            <li><a href="#" class="home-menu">Home</a></li>
-                            <li><a href="#" class="about-menu">About</a></li>
-                            <li><a href="#" class="contact-menu">Contact</a></li>
+                            <li><a href="#home" class="link-menu home-menu">Home</a></li>
+                            <li><a href="#about" class="link-menu about-menu">About</a></li>
+                            <li><a href="#contact" class="link-menu contact-menu">Contact</a></li>
                         </ul>
                         <div class="menu-line"></div>
                     </div>
@@ -80,7 +80,7 @@
     </div>
     <!-- about page -->
     <div class="about" id="about">
-        <div class="container mt-4 pb-5">
+        <div class="container pt-4 pb-5">
             <!-- title -->
             <h1 class="text-center primary-text title">About</h1>
             <!-- title bottom line -->
@@ -225,6 +225,18 @@
     <script src="asset/bootstrap_4/js/popper.min.js"></script>
     <script src="asset/bootstrap_4/js/bootstrap.js"></script>
     <script>
+
+        $('.link-menu').click(function (e) {
+            let targetPage = $(this).attr('href');
+            let elementTarget = $(targetPage);
+            // $('html').scrollTop(elementTarget.offset().top)
+            $('html').animate({
+                scrollTop: elementTarget.offset().top
+            },1000)
+            e.preventDefault();
+        })
+
+
         $('.home-menu').hover(function () {
             // over
             $('.menu-line').toggleClass('home-menu-line');
