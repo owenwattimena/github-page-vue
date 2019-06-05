@@ -204,7 +204,7 @@ html, body{
 /* end of about */
 
 /* contact */
-.contact, .row div{
+.contact .row div{
     padding-right: 0;
 }
 
@@ -213,6 +213,20 @@ footer p{
 }
 /* end of contact */
 
+/* btn-scroll up */
+.btn-scroll-up{
+    background-color: rgba(0, 0, 0, .5);
+    color:#23B44A;
+    border: 1px solid #23B44A;
+    bottom: 30px;
+    right: 30px;
+    transition: 1s;
+}
+.hide-btn-scroll-up{
+    opacity: 0;
+    transition: 1s;
+}
+/* end of btn-scroll up */
 
 
 

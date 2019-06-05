@@ -215,6 +215,10 @@
         </div>
     </div>
 
+    <!-- btn scroll up -->
+    <button type="button" id="btn-scroll-up" class="btn btn-scroll-up position-fixed hide-btn-scroll-up"><i
+            class="fa fa-chevron-up"></i></button>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="asset/jquery/jquery-3.3.1.js"></script>
@@ -277,6 +281,24 @@
             }
 
         })
+        // about = 526
+        // contact = 1276
+
+        $(window).on('scroll', function () {
+            yAxis = this.scrollY
+            if (yAxis >= 273) {
+                $('.btn-scroll-up').removeClass('hide-btn-scroll-up');
+            }
+            else {
+                $('.btn-scroll-up').addClass('hide-btn-scroll-up');
+            }
+        })
+
+        $('#btn-scroll-up').click(function () {
+            $('html').animate({
+                scrollTop: $('html').offset().top
+            }, 1000);
+        });
     </script>
 </body>
 
