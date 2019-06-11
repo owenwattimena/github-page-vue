@@ -196,7 +196,7 @@ html, body{
     }
 }
 
-.education-title, .certificate-title, .knowledge-title{
+.education-title, .certificate-title, .knowledge-title, .project-title{
     color: #23B44A;
 }
 .knowledge-list .row>div{
@@ -208,6 +208,14 @@ html, body{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.project-list a{
+    color: rgb(63, 70, 65);
+    text-decoration: none;
+}
+.project-list a:hover{
+    color: rgb(97, 102, 99);
 }
 
     /* knowledge-list responsive */
