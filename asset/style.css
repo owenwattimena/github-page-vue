@@ -99,7 +99,7 @@ html, body{
     background-position-x: -265px;
 }
 .img3{
-    background-image: url(img/owen6.JPG);
+    background-image: url(img/owen6.jpg);
     content: "";
     height: 525px;
     background-size: cover;
@@ -107,7 +107,7 @@ html, body{
     /* background-position-y: 500px; */
 }
 .img4{
-    background-image: url(img/owen7.JPG);
+    background-image: url(img/owen7.jpg);
     content: "";
     height: 525px;
     background-size: cover;
