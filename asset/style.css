@@ -99,14 +99,15 @@ html, body{
     background-position-x: -265px;
 }
 .img3{
-    background-image: url(img/owen4.JPG);
+    background-image: url(img/owen6.JPG);
     content: "";
     height: 525px;
     background-size: cover;
     background-position-x: -360px;
+    /* background-position-y: 500px; */
 }
 .img4{
-    background-image: url(img/owen5.JPG);
+    background-image: url(img/owen7.JPG);
     content: "";
     height: 525px;
     background-size: cover;
@@ -273,10 +274,10 @@ footer p{
         background-position-x: -240px;
     }
     .img3{
-        background-position-x: 0px;
+        background-position-x: -250px;
     }
     .img4{
-        background-position-x: 0px;
+        background-position-x: -250px;
     }
 }
 
@@ -289,11 +290,11 @@ footer p{
         background-position-x: -210px;
     }
     .img3{
-        background-position-x: 0px;
-        background-position-y: -10px;
+        background-position-x: -180px;
+        /* background-position-y: -10px; */
     }
     .img4{
-        background-position-x: 0px;
+        background-position-x: -180px;
     }
 }
 /* screen width 479px */
@@ -318,25 +319,28 @@ footer p{
 }
 /* screen width 639px */
 @media only screen and (min-width: 639px){
-    .img1{
+    .img1,.img3,.img4{
         background-position-x:0px;
     }
 }
 /* screen width 760px */
 @media only screen and (min-width: 760px){
     .img3{
-        background-position-y:-100px;
+        /* background-position-y:-100px; */
     }
 }
 /* screen width 990px */
 @media only screen and (min-width: 990px){
-    .img1, .img4{
+    .img1{
         background-position-y:-150px;
     }
     .img3{
         
         /* background-size: unset; */
-        background-position-y:-500px;
+        background-position-y:-200px;
+    }
+    .img4{
+        background-position-y: -300px;
     }
     /* .img4{
         background-position-y:-150px;
