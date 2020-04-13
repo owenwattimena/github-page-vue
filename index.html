@@ -18,377 +18,187 @@
 </head>
 
 <body>
-    <!-- home page -->
-    <div class="home" id="home">
-        <header class="position-absolute">
-            <div class="container">
-                <nav>
-                    <div class="nav-brand">
-                        <a href="#" class="text-light">Owen Wattimena</a>
-                    </div>
-                    <div class="nav-menu">
-                        <ul>
-                            <!-- <li><a href="#home" class="link-menu home-menu">Home</a></li> -->
-                            <li><a href="#about" class="link-menu about-menu">About</a></li>
-                            <li><a href="#contact" class="link-menu contact-menu">Contact</a></li>
-                        </ul>
-                        <div class="menu-line"></div>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner d-non">
-                <div class="carousel-item active">
-                    <div class="img2"></div>
-                </div>
-                <div class="carousel-item">
-                    <div class="img1"></div>
-                </div>
-                <div class="carousel-item">
-                    <div class="img3"></div>
-                </div>
+    <div id="app">
+        <!-- home page -->
+        <home>
+            <navbar :title="title"></navbar>
+            <carousel></carousel>
+        </home>
+        <!-- about page -->
+        <about>
+            <about-card>
+                <card icon="./asset/img/wisuda.svg" title="Education" :descriptions="card_data.education">
+                </card>
+                <card icon="./asset/img/certificate.svg" title="Certificates" :descriptions="card_data.certificate">
+                </card>
+            </about-card>
 
-                <div class="carousel-item">
-                    <div class="img4"></div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-        <!-- quotes -->
-        <div class="container">
-            <div class="quotes position-absolute text-light text-right">
-                <p>
-                    "If you can't make it good, at least make it look good."
-                </p>
-                <span>~Bill Gates</span>
-            </div>
-        </div>
-        <div class="opacity"></div>
+            <skill>
+                <skill-icon v-for="skill_data in skill_datas" :url_icon="skill_data.url" :title="skill_data.title">
+                </skill-icon>
+            </skill>
+
+            <project>
+                <project-card v-for="project_data in project_datas" :url_img="project_data.url_img"
+                    :url_project="project_data.url_project" :title="project_data.title" :fiture="project_data.fiture"
+                    :technology="project_data.technology"></project-card>
+            </project>
+        </about>
+
+        <!-- contact page -->
+        <contact footer="Copyright by @wentoxwtt">
+            <id-card :card_url="id_card.url"></id-card>
+        </contact>
+
+        <!-- btn scroll up -->
+        <button-scroll-up></button-scroll-up>
 
     </div>
-    <!-- about page -->
-    <div class="about" id="about">
-        <div class="container pt-4 pb-5">
-            <!-- title -->
-            <h1 class="text-center primary-text title">About</h1>
-            <!-- title bottom line -->
-            <div class="bottom-line blue"></div>
-
-            <div class="row mt-5">
-
-                <div class="col-lg-6 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="graduation"></div>
-                            <h5 class="text-center education-title">Education</h5>
-                            <div class="card-info">
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-star"></i>
-                                        <p>Eben-haizer Christian Education Foundation Primary School of Sarmi.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-star"></i>
-                                        <p>
-                                            First State Junior High School of Sarmi
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-star"></i>
-                                        <p>
-                                            First State Senior High School of Sarmi
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-star"></i>
-                                        <p>
-                                            State Polytechnic of Ambon <span class="text-primary"><small>(On
-                                                    progress)</small></span>
-
-                                        </p>
-                                    </li>
-                                </ul>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="certificate"></div>
-                            <h5 class="text-center certificate-title">Certificate</h5>
-                            <div class="card-info">
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-star"></i>
-                                        <p>
-                                            Computer Network-based Labolatory
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-star"></i>
-                                        <p>
-                                            Fasilitasi Sertifikasi Nasional (SKKNI) Bidang TIK
-                                            JUNIOR PROGRAMMING
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-star"></i>
-                                        <p>
-                                            BNSP SERTIFIKAT KOMPETENSI Software Development Junior Programming
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="knowledge text-center mt-5">
-                <h3 class="knowledge-title">Skill</h3>
-                <div class="knowledge-list">
-                    <div class="row justify-content-center">
-                        <div class="col-3 col-md-2 col-lg-1">
-                            <img src="asset/img/html-icon.svg" data-toggle="tooltip" data-placement="top" title="HTML">
-                        </div>
-                        <div class="col-3 col-md-2 col-lg-1">
-                            <img src="asset/img/css-icon.svg" data-toggle="tooltip" data-placement="top" title="CSS">
-                        </div>
-                        <div class="col-3 col-md-2 col-lg-1">
-                            <img src="asset/img/js-icon.svg" data-toggle="tooltip" data-placement="top"
-                                title="Javascript">
-                        </div>
-                        <div class="col-3 col-md-2 col-lg-1">
-                            <img src="asset/img/bootstrap-icon.svg" data-toggle="tooltip" data-placement="top"
-                                title="Bootstrap">
-                        </div>
-                        <div class="col-3 col-md-2 col-lg-1">
-                            <img src="asset/img/jquery-icon.svg" data-toggle="tooltip" data-placement="top"
-                                title="JQuery">
-                        </div>
-                        <div class="col-3 col-md-2 col-lg-1">
-                            <img src="asset/img/php-icon.svg" data-toggle="tooltip" data-placement="top" title="PHP">
-                        </div>
-                        <div class="col-3 col-md-2 col-lg-1">
-                            <img src="asset/img/codeigniter-icon.svg" data-toggle="tooltip" data-placement="top"
-                                title="CodeIgniter">
-                        </div>
-                        <div class="col-3 col-md-2 col-lg-1">
-                            <img src="asset/img/mysql.svg" data-toggle="tooltip" data-placement="top" title="MySQL">
-                        </div>
-                        <div class="col-3 col-md-2 col-lg-1">
-                            <img src="asset/img/access-icon.svg" data-toggle="tooltip" data-placement="top"
-                                title="Ms Access">
-                        </div>
-                        <div class="col-3 col-md-2 col-lg-1">
-                            <img src="asset/img/git-icon.svg" data-toggle="tooltip" data-placement="top" title="git">
-                        </div>
-                        <div class="col-3 col-md-2 col-lg-1">
-                            <img src="asset/img/flutter-icon.svg" data-toggle="tooltip" data-placement="top"
-                                title="Flutter">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project text-center mt-5">
-                <h3 class="project-title">
-                    Project
-                </h3>
-                <div class="project-list mt-3">
-                    <div class="row justify-content-center">
-                        <!-- Kaltistik -->
-                        <div class="col-xs-12 col-sm-6 col-md-4 mb-3">
-                            <div class="card px-4 pt-4 pb-2">
-                                <img height="150" class=" card-img-top"
-                                    src="https://owenwattimena.github.io/kaltistik/asset/img/statistik.png"
-                                    alt="KalTistik">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://owenwattimena.github.io/kaltistik"
-                                            target="_blank">KalTistik</a>
-                                        <div class="tech">
-                                            <i><small>HTML | Bootstrap | JQuery</small></i>
-                                            <h6 class="text-success">WEB</h6>
-                                        </div>
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Kamus Maluku -->
-                        <div class="col-xs-12 col-sm-6 col-md-4 mb-3">
-                            <div class="card px-4 pt-4 pb-2">
-                                <img height="150" style="width: 150px;" class="card-img-top mx-auto"
-                                    src="https://images-na.ssl-images-amazon.com/images/I/51y3qgHYU%2BL.png"
-                                    alt="Kamus Maluku">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://www.amazon.com/Wentox-Wtt-Kamus-Maluku/dp/B07VDZYSHH/ref=sr_1_1?keywords=kamus+maluku&qid=1566961756&s=gateway&sr=8-1"
-                                            target="_blank">Kamus Maluku</a>
-                                        <div class="tech">
-                                            <i><small>Dart | Flutter </small></i>
-                                            <h6 class="text-success">ANDROID</h6>
-                                        </div>
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Berantas TB! -->
-                        <div class="col-xs-12 col-sm-6 col-md-4 mb-3">
-                            <div class="card px-4 pt-4 pb-2">
-                                <img height="150" style="width: 150px;" class="rounded-circle card-img-top mx-auto"
-                                    src="asset/img/logo-tbc.png" alt="Kamus Maluku">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a href="https://play.google.com/store/apps/details?id=com.wentoxwtt.berantas_tbc"
-                                            target="_blank">Berantas TB!</a>
-                                        <div class="tech">
-                                            <i><small>Dart | Flutter </small></i>
-                                            <h6 class="text-success">ANDROID</h6>
-                                        </div>
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- contact page -->
-    <div class="contact" id="contact" style="background-color: #FC6D4B; transition: 2s;">
-        <div class="container pt-4">
-            <h1 class="text-light text-center">Contact</h1>
-            <div class="bottom-line bg-light"></div>
-            <div class="id-card">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <img src="asset/img/card.svg" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <footer class="text-light text-center pb-3">
-                <p>Copyright by Wentox Wtt</p>
-            </footer>
-        </div>
-    </div>
-
-    <!-- btn scroll up -->
-    <button type="button" id="btn-scroll-up" class="btn btn-scroll-up position-fixed hide-btn-scroll-up"><i
-            class="fa fa-chevron-up"></i></button>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="asset/jquery/jquery-3.3.1.js"></script>
     <script src="asset/bootstrap_4/js/popper.min.js"></script>
     <script src="asset/bootstrap_4/js/bootstrap.js"></script>
-    <script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+    <!-- <script src="component/componen.js"></script> -->
 
-        $('.link-menu').click(function (e) {
-            let targetPage = $(this).attr('href');
-            let elementTarget = $(targetPage);
-            // $('html').scrollTop(elementTarget.offset().top)
-            $('html').animate({
-                scrollTop: elementTarget.offset().top
-            }, 1000)
-            e.preventDefault();
+    <script type="module">
+        import { Home } from './components/Home.js';
+        import { Navbar } from './components/Navbar.js';
+        import { Carousel } from './components/Carousel.js';
+        import { About } from './components/About.js';
+        import { AboutCard } from './components/AboutCard.js';
+        import { Project } from './components/Project.js';
+        import { Skill } from './components/Skill.js';
+        import { Card } from './components/Card.js';
+        import { SkillIcon } from './components/SkillIcon.js';
+        import { ProjectCard } from './components/ProjectCard.js';
+        import { IdCard } from './components/IdCard.js';
+        import { Contact } from './components/Contact.js';
+        import { ButtonScrollUp } from './components/ButtonScrollUp.js';
+
+        new Vue({
+            el: '#app',
+            components: {
+                'home': Home,
+                'navbar': Navbar,
+                'carousel': Carousel,
+                'about': About,
+                'about-card': AboutCard,
+                'skill': Skill,
+                'project': Project,
+                'card': Card,
+                'skill-icon': SkillIcon,
+                'project-card': ProjectCard,
+                'id-card': IdCard,
+                'contact': Contact,
+                'button-scroll-up': ButtonScrollUp,
+            },
+            data: {
+                title: 'Owen Wattimena',
+                card_data: {
+                    'education': [
+                        'Eben-haizer Christian Education Foundation Primary School of Sarmi.',
+                        'First State Junior High School of Sarmi',
+                        'First State Senior High School of Sarmi',
+                        'State Polytechnic of Ambon (On progress)',
+                    ],
+                    'certificate': [
+                        'Computer Network-based Labolatory',
+                        'Fasilitasi Sertifikasi Nasional (SKKNI) Bidang TIK JUNIOR PROGRAMMING',
+                        'BNSP SERTIFIKAT KOMPETENSI Software Development Junior Programming',
+                    ],
+                },
+                skill_datas: [
+                    // {
+                    //     'title': 'HTML',
+                    //     'url': 'asset/img/html-icon.svg'
+                    // },
+                    // {
+                    //     'title': 'CSS',
+                    //     'url': 'asset/img/css-icon.svg'
+                    // },
+                    // {
+                    //     'title': 'Javascript',
+                    //     'url': 'asset/img/js-icon.svg'
+                    // },
+                    {
+                        'title': 'Bootstrap',
+                        'url': 'asset/img/bootstrap-icon.svg'
+                    },
+                    {
+                        'title': 'JQuery',
+                        'url': 'asset/img/jquery-icon.svg'
+                    },
+                    {
+                        'title': 'PHP',
+                        'url': 'asset/img/PHP-icon.svg'
+                    },
+                    {
+                        'title': 'CodeIgniter',
+                        'url': 'asset/img/codeigniter-icon.svg'
+                    },
+                    {
+                        'title': 'MySQL',
+                        'url': 'asset/img/mysql.svg'
+                    },
+                    {
+                        'title': 'MS Access',
+                        'url': 'asset/img/access-icon.svg'
+                    },
+                    {
+                        'title': 'git',
+                        'url': 'asset/img/git-icon.svg'
+                    },
+                    {
+                        'title': 'Flutter',
+                        'url': 'asset/img/flutter-icon.svg'
+                    },
+                    {
+                        'title': 'Firebase',
+                        'url': 'https://img.icons8.com/color/480/firebase.png'
+                    },
+                    {
+                        'title': 'Vue.js',
+                        'url': 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/512px-Vue.js_Logo_2.svg.png'
+                    },
+                ],
+                project_datas: [
+                    {
+                        url_img: 'https://owenwattimena.github.io/kaltistik/asset/img/statistik.png',
+                        url_project: 'https://owenwattimena.github.io/kaltistik',
+                        title: 'Kaltistik',
+                        fiture: 'HTML | Bootstrap | JQuery',
+                        technology: 'WEB'
+                    },
+                    {
+                        url_img: 'https://images-na.ssl-images-amazon.com/images/I/51y3qgHYU%2BL.png',
+                        url_project: 'https://www.amazon.com/Wentox-Wtt-Kamus-Maluku/dp/B07VDZYSHH/ref=sr_1_1?keywords=kamus+maluku&qid=1566961756&s=gateway&sr=8-1',
+                        title: 'Kamus Maluku',
+                        fiture: 'Dart | Flutter ',
+                        technology: 'ANDROID'
+                    },
+                    {
+                        url_img: 'asset/img/logo-tbc.png',
+                        url_project: 'https://play.google.com/store/apps/details?id=com.wentoxwtt.berantas_tbc',
+                        title: 'Berantas TB!',
+                        fiture: 'Dart | Flutter',
+                        technology: 'ANDROID'
+                    },
+                    {
+                        url_img: 'https://owenwattimena.github.io/covid19-stats/assets/img/icon.png',
+                        url_project: 'https://owenwattimena.github.io/covid19-stats',
+                        title: 'Covid19 Stats',
+                        fiture: 'Bootstrap | JQuery | Firebase',
+                        technology: 'WEB'
+                    }
+                ],
+                id_card: {
+                    url: 'asset/img/card.svg'
+                }
+            },
         })
-
-
-        // $('.home-menu').hover(function () {
-        //     // over
-        //     $('.menu-line').toggleClass('home-menu-line');
-
-        // }, function () {
-        //     // out
-        //     $('.menu-line').toggleClass('home-menu-line');
-        // }
-        // );
-        $('.about-menu').hover(function () {
-            // over
-            $('.menu-line').toggleClass('about-menu-line');
-
-        }, function () {
-            // out
-            $('.menu-line').toggleClass('about-menu-line');
-        }
-        );
-        $('.contact-menu').hover(function () {
-            // over
-            $('.menu-line').toggleClass('contact-menu-line');
-
-        }, function () {
-            // out
-            $('.menu-line').toggleClass('contact-menu-line');
-        }
-        );
-        $('#carouselExampleIndicators').on('slid.bs.carousel', function () {
-            // do something…
-
-            let currentImage = $('.active div').attr('class');
-
-
-            switch (currentImage) {
-                case 'img1':
-                    $('#contact').css('background-color', '#C8291F');
-                    $('#contact').css('transition', '2s');
-                    break;
-                case 'img2':
-                    $('#contact').css('background-color', '#FC6D4B');
-                    $('#contact').css('transition', '2s');
-                    break;
-                case 'img3':
-                    // #8F1E37
-                    $('#contact').css('background-color', '#8bc0f4');
-                    $('#contact').css('transition', '2s');
-                    break;
-                case 'img4':
-                    // #434343
-                    $('#contact').css('background-color', '#5c9846');
-                    $('#contact').css('transition', '2s');
-                    break;
-
-                default:
-                    break;
-            }
-
-        })
-        // about = 526
-        // contact = 1276
-
-        $(window).on('scroll', function () {
-            yAxis = this.scrollY
-            if (yAxis >= 273) {
-                $('.btn-scroll-up').removeClass('hide-btn-scroll-up');
-            }
-            else {
-                $('.btn-scroll-up').addClass('hide-btn-scroll-up');
-            }
-        })
-
-        $('#btn-scroll-up').click(function () {
-            $('html').animate({
-                scrollTop: $('html').offset().top
-            }, 1000);
-        });
     </script>
 </body>
 
